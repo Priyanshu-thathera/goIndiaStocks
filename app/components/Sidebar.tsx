@@ -46,7 +46,8 @@ const Sidebar = () => {
 
           <hr className="h-2" />
           <div className="flex flex-col text-xl">
-            {menuItems.map(({ icon: Icon, ...menu }) => {
+            {menuItems.map((menu:any) => {
+              const Icon = menu.icon
               return (
                 <div className="flex p-2 hover:bg-sky-700">
                   <div className="p-1 w-10">
