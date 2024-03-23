@@ -49,7 +49,7 @@ const Sidebar = () => {
             {menuItems.map((menu:any) => {
               const Icon = menu.icon
               return (
-                <div className="flex p-2 hover:bg-sky-700">
+                <div className="flex p-2 hover:bg-sky-700" key={menu.id}>
                   <div className="p-1 w-10">
                     <Icon />
                   </div>
